@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {"host": "127.0.0.1", "port": 8000},
+        {"host": "127.0.0.1", "port": 8001},
+        {"host": "127.0.0.1", "port": 8002}
+    ],
+    "initial_members": [
+        {
+            "id": "member0",
+            "role": "admin",
+            "permissions": ["propose", "vote", "read"],
+            "evm_bound_address": "0x2A6b5204B83C7619c90c4EB6b5365AA0b7d912F7"
+        },
+        {
+            "id": "member1",
+            "role": "voter",
+            "permissions": ["vote", "read"]
+        }
+    ],
+    "application_binary": "build/main.js"
+}
